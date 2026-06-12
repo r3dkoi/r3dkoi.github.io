@@ -45,3 +45,20 @@ nav {
   align-items: center;
   padding: 20px 40px;
 }
+
+.logo img {
+    width: 100px;
+    height: auto; /* Image won't stretch */
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: var(--light);
+  text-decoration: none;
+}
