@@ -39,6 +39,16 @@ h1, h2, h3 {
     font-family: 'Altero', sans-serif;
 }
 
+
+/* Dark Mode */ 
+body.dark {
+  --navy: #121358;
+  --secondary: #232F72;
+  --tertiary: #2F578A; /*Text colour */
+  --highlight: #36ADA3; /* For links, accents, borders etc */
+}
+
+
 /* Navigation */
 nav {
   display: flex;
