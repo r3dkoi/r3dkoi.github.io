@@ -293,4 +293,8 @@ footer {
   font-size: 32px;
   cursor: pointer;
 }
+/* TODO: Mobile responsiveness — add media query to collapse grid to 1 column at 768px.
+   Also fix flip card: hover doesn't work on touch screens.
+   CSS: add .flipped { transform: rotateY(180deg) } on .inner-card
+   JS: toggle .flipped class on card click/tap instead of relying on hover */
 /* ------------- GALLERY PAGE END ---------------*/
