@@ -98,7 +98,7 @@ nav {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding-bottom: auto;
+    padding-bottom: 50px;
 }
 
 .featured h1 {
@@ -127,7 +127,34 @@ footer {
     padding: 40px 20px 20px;
     gap: 16px;
 }
-.social-links img {
-  width: 50px;
-  height: auto;
+
+.footer-top p {
+    color: var(--light);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links .twitter-icon {
+    width: 25px;
+    height: 20px;
+    
+} 
+
+.social-links .github-icon {
+    width: 30px;
+    height: 40px;
+}  
+
+.footer-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--light);
+    font-size: 58px;
+    font-family: 'Altero', sans-serif;
 }
