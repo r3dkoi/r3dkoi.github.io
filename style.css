@@ -56,18 +56,22 @@ body.dark {
     color: var(--headers-dark);
 }
 
-body.dark .nav-links a {
+body.dark .nav-links {
+    background-color: rgba(42, 39, 47, 0.8);
+}
+
+body.dark .nav-links a,
+body.dark .dark-mode-toggle {
     color: var(--highlight-dark);
 }
 
-body.dark .section-border-style {
+body.dark .section-border-style,
+body.dark .footer-top p{
     color: var(--headers-dark);
 }
-body.dark p {
-    color: var(--text-dark);
-}
 
-body.dark ul{
+body.dark p,
+body.dark ul {
     color: var(--text-dark);
 }
 
@@ -75,14 +79,7 @@ body.dark footer {
     background-color: var(--footer-dark);
 }
 
-body.dark .footer-top p {
-    color: var(--headers-dark);
-}
 
-
-body.dark .nav-links {
-    background-color: rgba(42, 39, 47, 0.8);
-}
 .dark-mode-toggle {
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
@@ -137,7 +134,7 @@ nav {
 .hero {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
 }   
 
