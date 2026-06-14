@@ -47,10 +47,21 @@ h1, h2, h3 {
 
 /* Dark Mode */ 
 body.dark {
-  --navy: #121358;
-  --secondary: #232F72;
-  --tertiary: #2F578A; /*Text colour */
-  --highlight: #36ADA3; /* For links, accents, borders etc */
+  --background-dark: #2A272F; 
+  --text-dark: #C7BBFB; /*Text colour */
+  --highlight-dark: #A8F3FF; /* For links, accents, borders etc */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--peach);
 }
 
 
