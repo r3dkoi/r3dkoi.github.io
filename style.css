@@ -12,10 +12,10 @@
 
 /* Main Colour Palette Reusauble */
 :root {
-  --navy: #001F3D;
-  --orange: #ED985F;
-  --peach: #F7B980;
-  --light: #E6E6E6;
+  --navy: #001F3D; /* 60% */
+  --orange: #ED985F; /* 30% */
+  --peach: #F7B980; /* 10% */
+  --light: #E6E6E6; /* 30% */
 }
 
 /* Resetting browser margin and padding to elements */
@@ -37,6 +37,9 @@ body {
 
 }
 
+p {
+    color: var(--light);
+}
 h1, h2, h3 {
     font-family: 'Altero', sans-serif;
 }
@@ -126,6 +129,7 @@ nav {
 
 .featured ul {
     font-size: 24px;
+    color: var(--light);
 }
 
 /* Featured Video */
