@@ -134,6 +134,10 @@ nav {
   font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 .nav-right {
   display: flex;
   align-items: center;
