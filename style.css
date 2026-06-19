@@ -188,8 +188,14 @@ nav {
 
 .featured ul {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
-    color: var(--light);
+    color: var(--navy);
     list-style: none;
+}
+
+.featured li {
+    background-color: var(--light);
+    border-radius: 8px;
+    display: inline-block; /* Keeps it from stretching to full width of ul block */
 }
 
 /* Featured Video */
