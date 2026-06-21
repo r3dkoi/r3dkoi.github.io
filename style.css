@@ -155,6 +155,7 @@ nav {
   position: fixed;
   top: 20px;
   right: 40px;
+  z-index: 100; /* keeps nav above gallery cards and other stacking contexts */
 }
 /* ------------- HOME PAGE ---------------*/
 /* Homepage Body */
