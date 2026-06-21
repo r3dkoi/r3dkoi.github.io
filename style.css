@@ -61,6 +61,9 @@ body.dark {
     color: var(--headers-dark);
 }
 
+body.dark .gallery {
+     background: linear-gradient(180deg, var(--background-dark), var(--background-dark-secondary));
+}
 body.dark .card-back {
     background-color: rgba(42, 39, 47, 0.8);
 }
@@ -70,6 +73,9 @@ body.dark .dark-mode-toggle {
     color: var(--highlight-dark);
 }
 
+body.dark .nav-links a:hover {
+    color: var(--headers-dark);
+}
 body.dark .footer-top p{
     color: var(--headers-dark);
 }
@@ -124,9 +130,10 @@ nav {
   display: flex;
   flex-direction: column;
   list-style: none;
+  cursor: pointer;
   gap: 10px;
   /*background-color: rgba(0, 31, 61, 0.8); /*Opaque menu background when scrolling through content*/
-  border-radius: 5px;
+  /* border-radius: 5px; */
 
 }
 
@@ -138,6 +145,7 @@ nav {
 
 .nav-links a:hover {
     text-decoration: underline;
+    color: var(--orange);
 }
 
 .nav-right {
@@ -291,9 +299,16 @@ footer {
 
 .gallery {
     padding: 80px 40px;
+    background: linear-gradient(180deg, var(--navy), var(--secondary)); /* To differentiate between nav and gallery */
 }
 
 
+.gallery-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
 /* Cards auto-fill rows at min 280px wide; new cards stack downward when a row is full */
 .gallery-track {
     display: grid;
@@ -377,10 +392,6 @@ footer {
   font-size: clamp(1.5rem, 2.7vw, 2rem);
   cursor: pointer;
 }
-/* TODO: Mobile responsiveness — add media query to collapse grid to 1 column at 768px.
-   Also fix flip card: hover doesn't work on touch screens.
-   CSS: add .flipped { transform: rotateY(180deg) } on .inner-card
-   JS: toggle .flipped class on card click/tap instead of relying on hover */
 /* ------------- GALLERY PAGE END ---------------*/
 
 /* ------------- CONTACT PAGE ---------------*/
