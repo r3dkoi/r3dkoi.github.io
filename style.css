@@ -498,6 +498,16 @@ button:hover {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1024px) {
+    .about-container {
+        max-width: 70%; 
+    }
+
+    form {
+        max-width: 80%; 
+    }
+}
+
 @media (max-width: 690px) {
     .nav-right {
         flex-direction: column;
@@ -508,11 +518,27 @@ button:hover {
     } /* Keeps nav links and toggle side-by-side and no overflow */
 
     .hero {
-        padding-top: 120px 20px 0;
-    } /* pushes content below stacked nav links */
-
-    .about {
-        flex-direction: column;
+        padding: 120px 20px 0; /* pushes content below stacked nav on mobile */
     }
 
+    .about {
+        flex-direction: column; /* stacks photo and text vertically on mobile */
+    }
+
+    .about-container {
+        max-width: 100%; /* full width on mobile, no side cramping */
+    }
+
+    form {
+        max-width: 100%; /* full width on mobile */
+    }
+
+    .form-row {
+        flex-direction: column; /* stacks name/email fields on mobile */
+        gap: 20px; /* matches form gap so name/email don't have extra space between them */
+    }
+
+    .gallery-information {
+        padding: 0 16px; /* tighter padding so text doesn't hug the edge on mobile */
+    }
 }
