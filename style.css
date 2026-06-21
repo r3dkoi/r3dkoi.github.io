@@ -39,7 +39,6 @@ html {
 /* Base Style */
 body {
     background-color: var(--navy);
-    color: var(--orange);
     font-family: 'Questrial', sans-serif; /* fallback to any sans serif */
     min-height: 100vh;
     display: flex;
@@ -52,6 +51,7 @@ p {
 }
 h1, h2, h3 {
     font-family: 'Altero', sans-serif;
+    color: var(--orange);
 }
 
 
@@ -170,8 +170,7 @@ nav {
 .hero p {
     font-size:clamp(1.25rem, 1.87vw, 1.5rem)
 }
-.hero h1
-.gallery-information h2 {
+.hero h1{
     font-size: clamp(1.75rem, 6vw, 2.25rem) /* scales between min and max based on viewport */
 }
 
@@ -206,6 +205,7 @@ nav {
 
 .featured li {
     background-color: var(--light);
+    padding:0.25em 0.75em;
     border-radius: 8px;
     list-style-type: "★ ";
     list-style-position: inside; /* Allows list deco to be part of background color width */
@@ -314,7 +314,23 @@ footer {
     padding: 0 40px; /* Stops text from hitting the sides of the screen */
 }
 
+.gallery-information h2 {
+    font-size: clamp(1.5rem, 4.5vw, 2rem); /* slightly smaller than h1 */
+}
 
+.gallery-information .subtitle {
+    font-size: clamp(0.75rem, 3vw, 0.85rem);
+    background-color: var(--light); 
+    color: var(--navy);
+    padding: 0 0.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+} 
+
+.gallery-information p {
+    font-size:clamp(1.05rem, 1.52vw, 1.0rem);
+}
 /* Cards auto-fill rows at min 280px wide; new cards stack downward when a row is full */
 .gallery-track {
     display: grid;
