@@ -341,9 +341,7 @@ footer {
     width: fit-content;
 } 
 
-.gallery-information p {
-    font-size:clamp(1.05rem, 1.52vw, 1.0rem);
-}
+
 /* Cards auto-fill rows at min 280px wide; new cards stack downward when a row is full */
 .gallery-track {
     display: grid;
