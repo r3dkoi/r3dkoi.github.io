@@ -168,9 +168,10 @@ nav {
 }   
 
 .hero p {
-    font-size: clamp(1.25rem, 1.87vw, 1.5rem)
+    font-size:clamp(1.25rem, 1.87vw, 1.5rem)
 }
-.hero h1 {
+.hero h1
+.gallery-information h2 {
     font-size: clamp(1.75rem, 6vw, 2.25rem) /* scales between min and max based on viewport */
 }
 
@@ -308,8 +309,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    text-align: left;
+    max-width: 700px;
+    padding: 0 40px; /* Stops text from hitting the sides of the screen */
 }
+
+
 /* Cards auto-fill rows at min 280px wide; new cards stack downward when a row is full */
 .gallery-track {
     display: grid;
@@ -429,11 +434,6 @@ form {
 }
 
 /* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    /* tablet adjustments */
-
-}
 
 @media (max-width: 690px) {
     .nav-right {
