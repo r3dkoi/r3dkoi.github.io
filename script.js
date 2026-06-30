@@ -24,22 +24,25 @@ const form = document.querySelector('form');
 
 if (form) {
     form.addEventListener('submit', function(e) {
-        e.preventDefault();
+        e.preventDefault(); // stops the page from refreshing on submit
 
+        // Grab the value from each field
         const name = document.getElementById('fullname').value;
         const email = document.getElementById('email_contact').value;
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
 
+        // Check if any field is empty
         if (name === '' || email === '' || subject === '' || message === '') {
             alert('Please fill in all fields before sending.');
         } else {
             alert("Message sent! I'll get back to you soon.");
-            form.reset();
+            form.reset(); // clears all fields after successful submission
         }
     });
 }
 // FORM VALIDATION END //
+
 
 // GALLERY START //
 const galleryTrack = document.querySelector('.gallery-track');
