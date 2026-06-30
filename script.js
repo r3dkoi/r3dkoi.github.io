@@ -19,7 +19,27 @@ toggle.addEventListener('click', function() {
 
 // DARK MODE END //
 
-// NAV LINK INTERACTIVITY //
+// FORM VALIDATION //
+const form = document.querySelector('form');
+
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('fullname').value;
+        const email = document.getElementById('email_contact').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || subject === '' || message === '') {
+            alert('Please fill in all fields before sending.');
+        } else {
+            alert("Message sent! I'll get back to you soon.");
+            form.reset();
+        }
+    });
+}
+// FORM VALIDATION END //
 
 // GALLERY START //
 const galleryTrack = document.querySelector('.gallery-track');
